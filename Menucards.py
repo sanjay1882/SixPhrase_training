@@ -22,7 +22,7 @@ while True:
     elif a.lower()=="c":
         if Sum >500:
             print("You have Discount of 10%")
-            out=Sum*(10/100)
+            out=Sum*0.9
             print("the Amount is :",out)
     elif a.lower()=="n" or a.lower()=="e" :
         break    
