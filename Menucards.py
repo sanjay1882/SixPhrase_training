@@ -1,10 +1,4 @@
 items={"Pizza":200,"Burger":250,"Idly":50,"Dosa":60}
-
-
-
-
-#Step:1
-#Printing Menu
 print("Menus")
 s=1
 sno={}
@@ -23,12 +17,19 @@ while True:
         pr=int(input("Enter a Item No :"))
         for key, value in sno.items():
             if value == pr:
-                sum+=items[key]
+                Sum+=items[key]
         
     elif a.lower()=="c":
-        if sum >500:
+        if Sum >500:
             print("You have Discount of 10%")
-            
+            out=Sum*(10/100)
+            print("the Amount is :",out)
+    elif a.lower()=="n" or a.lower()=="e" :
+        break    
+
+
+
+
 
 
 
